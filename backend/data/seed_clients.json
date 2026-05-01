@@ -1,0 +1,128 @@
+[
+  {
+    "name": "Ana García",
+    "email": "ana.garcia@example.com",
+    "phone": "+34 600 111 222",
+    "notes": "Cliente preferente. Interesada en guitarras eléctricas de gama alta.",
+    "preferences": {
+      "brands": ["Fender", "Gibson"],
+      "types": ["Eléctrica", "Semi-hollow"]
+    },
+    "history": [
+      {
+        "product": "Fender Stratocaster American Professional II",
+        "viewed_at": "2026-04-10T10:30:00Z"
+      },
+      {
+        "product": "Gibson ES-335 Dot",
+        "viewed_at": "2026-04-18T14:15:00Z"
+      },
+      {
+        "product": "Fender Telecaster Player Series",
+        "viewed_at": "2026-04-25T09:00:00Z"
+      }
+    ],
+    "purchases": [
+      {
+        "product": "Fender Stratocaster American Professional II",
+        "price": 1499.99,
+        "quantity": 1,
+        "purchased_at": "2026-04-15T11:00:00Z"
+      },
+      {
+        "product": "Fender Play Online Course (1 año)",
+        "price": 89.99,
+        "quantity": 1,
+        "purchased_at": "2026-04-16T09:30:00Z"
+      }
+    ]
+  },
+  {
+    "name": "Carlos López",
+    "email": "carlos.lopez@example.com",
+    "phone": "+34 600 333 444",
+    "notes": "Nuevo cliente. Busca su primera guitarra acústica.",
+    "preferences": {
+      "brands": ["Yamaha", "Taylor"],
+      "types": ["Acústica", "Clásica"]
+    },
+    "history": [
+      {
+        "product": "Yamaha FG800 Acústica",
+        "viewed_at": "2026-04-20T16:45:00Z"
+      },
+      {
+        "product": "Taylor 110e Acústica-Eléctrica",
+        "viewed_at": "2026-04-22T11:00:00Z"
+      }
+    ],
+    "purchases": [
+      {
+        "product": "Yamaha FG800 Acústica",
+        "price": 219.99,
+        "quantity": 1,
+        "purchased_at": "2026-04-23T17:00:00Z"
+      },
+      {
+        "product": "Funda Yamaha FG Series",
+        "price": 34.99,
+        "quantity": 1,
+        "purchased_at": "2026-04-23T17:00:00Z"
+      },
+      {
+        "product": "Pack de cuerdas D'Addario EJ16 x3",
+        "price": 19.99,
+        "quantity": 2,
+        "purchased_at": "2026-04-23T17:00:00Z"
+      }
+    ]
+  },
+  {
+    "name": "María Fernández",
+    "email": "maria.fernandez@example.com",
+    "phone": "+34 600 555 666",
+    "notes": "Cliente recurrente. Prefiere contacto por email. Fan del metal y el rock.",
+    "preferences": {
+      "brands": ["ESP", "Ibanez", "Jackson"],
+      "types": ["Eléctrica", "7 cuerdas"]
+    },
+    "history": [
+      {
+        "product": "Ibanez RG550 Genesis",
+        "viewed_at": "2026-04-05T18:20:00Z"
+      },
+      {
+        "product": "ESP LTD EC-1000",
+        "viewed_at": "2026-04-12T13:00:00Z"
+      },
+      {
+        "product": "Jackson Dinky JS22",
+        "viewed_at": "2026-04-15T20:10:00Z"
+      },
+      {
+        "product": "Ibanez RGD71ALMS 7 cuerdas",
+        "viewed_at": "2026-04-28T17:30:00Z"
+      }
+    ],
+    "purchases": [
+      {
+        "product": "ESP LTD EC-1000",
+        "price": 849.99,
+        "quantity": 1,
+        "purchased_at": "2026-04-14T19:00:00Z"
+      },
+      {
+        "product": "Jackson Dinky JS22",
+        "price": 299.99,
+        "quantity": 1,
+        "purchased_at": "2026-04-17T21:15:00Z"
+      },
+      {
+        "product": "Cuerdas Elixir Nanoweb 10-46 x4",
+        "price": 14.99,
+        "quantity": 4,
+        "purchased_at": "2026-04-20T10:00:00Z"
+      }
+    ]
+  }
+]

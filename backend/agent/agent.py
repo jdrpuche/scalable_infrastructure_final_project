@@ -4,6 +4,7 @@ from langgraph.prebuilt import create_react_agent
 
 from config import settings
 from agent.tools_langchain import tools
+from agent.prompt import SYSTEM_PROMPT
 from firebase.chat_history import get_history, append_message
 
 llm = ChatOpenAI(
@@ -27,7 +28,7 @@ def _to_lc_messages(history: list[dict]):
 
 async def run_agent(session_id: str, user_id: str, message: str) -> str:
     history = await get_history(session_id)
-    messages = _to_lc_messages(history) + [HumanMessage(content=message)]
+    messages = [SYSTEM_PROMPT] + _to_lc_messages(history) + [HumanMessage(content=message)]
 
     result = await graph.ainvoke({"messages": messages})
     ai_message = result["messages"][-1]
@@ -41,7 +42,7 @@ async def run_agent(session_id: str, user_id: str, message: str) -> str:
 
 async def stream_agent(session_id: str, user_id: str, message: str):
     history = await get_history(session_id)
-    messages = _to_lc_messages(history) + [HumanMessage(content=message)]
+    messages = [SYSTEM_PROMPT] + _to_lc_messages(history) + [HumanMessage(content=message)]
 
     full_response = []
     async for chunk in graph.astream({"messages": messages}):
